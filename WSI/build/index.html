@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Williams Sonoma</title>
+
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+    <!-- endinject -->
+    
+    <!-- inject:css -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- endinject -->
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header">
+                <img ng-src="images/logo.png" />
+            </div>
+            <div ng-include="'app/views/navigation.tmpl.html'">
+            </div>
+        </div>
+    </header>
+    <section class="container" ng-view>
+    </section>
+    <footer class="footer">
+        <p>Williams-Sonoma Inc.</p>
+    </footer>
+
+    <!-- bower:js -->
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="/bower_components/angular-animate/angular-animate.js"></script>
+    <script src="/bower_components/angular-route/angular-route.js"></script>
+    <!-- endinject -->
+
+    <!-- inject:js -->
+    <script src="app/app.js"></script>
+    <script src="app/services/product.service.js"></script>
+    <script src="app/controllers/productInfo.controller.js"></script>
+    <!-- endinject -->
+
+</body>
+
+</html>

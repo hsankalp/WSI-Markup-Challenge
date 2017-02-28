@@ -1,0 +1,38 @@
+<!-- Product details page which shows the product title, color selected, item description, price, quantity and additional information -->
+
+<div class="details">
+    <!-- Image Color changes based on the selected index from the smaller images in the images array -->
+    <h3>{{vm.product.title}}, {{vm.product.images[vm.selectedImg].color}}</h3>
+    <p>{{vm.product.description}}</p>
+    <ul ng-repeat="feature in vm.product.features">
+        <li>{{feature}}</li>
+    </ul>
+
+    <!-- Currency filter adds a $ sign by default in front of the number i.e. product price -->
+    <h3>{{vm.product.price|currency}}</h3>
+    <div>
+        <!-- Form which has a input for the quantity and submits below given data to the controller for the modal to process -->
+        <form name="qtyForm" ng-submit="vm.addToCart(vm.product.images[vm.selectedImg].smallImg, vm.product.images[vm.selectedImg].color, vm.product.qty)">
+            <!-- Minimum value is 1 and maximum value is the product quantity from the json which can be decremented while checkout, and this field is mandatory using required -->
+            <input name="qty" class="form-control" type="number" ng-model="vm.product.qty" placeholder="Quantity" min="1" max="{{vm.product.quantity}}" required>
+            <!-- Shows an error message if quantity is less than 1 which is not a valid number for quantity -->
+            <p class="error" ng-if="qtyForm.qty.$error.min">Enter a valid quantity</p>
+            <!-- Shows an error message if quantity is more than the availability -->
+            <p class="error" ng-if="qtyForm.qty.$error.max">Quantity entered more than the available stock</p>
+            <br>
+            <button type="submit" class="cartBtn">
+                <img src="images/button-add-to-cart.png" alt="submit" />
+            </button>
+        </form>
+    </div>
+    <hr>
+
+    <!-- Additional info is shown when user clicks on any of the tabs -->
+    <div class="additionalInfo">
+        <div ng-repeat="info in vm.product.additionalInfo">
+            <h4 ng-model="expanded" ng-click="expanded=!expanded"><img ng-show="!expanded" ng-src="images/arrow-collapsed.png" /><img ng-show="expanded" ng-src="images/arrow-expanded.png" /> {{info.title}}</h4>
+            <p ng-show="expanded">{{info.description}}</p>
+            <hr>
+        </div>
+    </div>
+</div>

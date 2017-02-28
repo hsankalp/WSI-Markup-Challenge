@@ -1,0 +1,20 @@
+<!-- Template for the modal after the user clicks Add to Cart -->
+
+<div class="cart">
+    <div class="container">
+        <h3>You've just added the following to your basket:</h3>
+        
+        <div class="container">
+            <div class="col-sm-2">
+                <img class="cartImg thumbnail" ng-src="{{vm.cartItem.img}}"/>
+            </div>
+            <div class="col-sm-5">
+                <p><b>{{vm.cartItem.title}}</b></p>
+                <p>Item ID: {{vm.cartItem.id}}</p>
+                <p>Color: {{vm.cartItem.color}}</p>
+                <p>Quantity: {{vm.cartItem.qty}}</p>
+                <p>Price: {{vm.cartItem.price|currency}} each</p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,35 @@
+{
+  "id": 1,
+  "title": "Williams-Sonoma Classic Apron",
+  "description": "A generously styled apron is necessity in the kitchen, and ours will brighten yours with lively color. Sewn of thick cotton, it can be personalized or monogrammed with upto nine characters, all the same height, embroidered in your choice of color. An apron of this quality makes a welcome gift for any cook.",
+  "features": ["Durable 100% cotton construction.", "Adjustable neckband ensures a good fit.", "Roomy front pockets hold small tools.", "Machine wash."],
+  "price": 19.95,
+  "quantity": 100,
+  "additionalInfo": [{
+    "title": "DIMENSIONS & MORE INFO",
+    "description": "Apron measures 27\" wide, 36\" long"
+  }, {
+    "title": "USE & CARE",
+    "description": "Spot-clean as needed, Machine washable"
+  }, {
+    "title": "SHIPPING",
+    "description": "This item is shipped from our warehouse by UPS to arrive within five business days of our receiving your order."
+  }],
+  "images": [{
+    "largeImg": "images/product-large-a.jpg",
+    "smallImg": "images/product-large-a.jpg",
+    "color": "French Blue"
+  }, {
+    "largeImg": "images/product-large-b.jpg",
+    "smallImg": "images/product-large-b.jpg",
+    "color": "Black Stripe"
+  }, {
+    "largeImg": "images/product-large-c.jpg",
+    "smallImg": "images/product-large-c.jpg",
+    "color": "Sage Stripe"
+  }, {
+    "largeImg": "images/product-large-d.jpg",
+    "smallImg": "images/product-large-d.jpg",
+    "color": "Claret Stripe"
+  }]
+}

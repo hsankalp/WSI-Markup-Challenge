@@ -1,0 +1,18 @@
+<!-- Gallery Page which shows the Large Image which changes when the user selects the color from the smaller images -->
+<div class="gallery">
+    <div>
+        <!-- Large Image changes based on the selected index from the smaller images in the images array -->
+        <img ng-src="{{vm.product.images[vm.selectedImg].largeImg}}" />
+    </div>
+    <div>
+        <p><b>Select the Color:</b></p>
+        <ul ng-repeat="img in vm.product.images">
+            <li>
+                <div ng-class="{'selectedImg': $index == vm.selectedImg}">
+                    <!-- clciking on the smaller image sends the index of the image i.e. selected image to the controller which in turn changes the larger image and the color in the product title -->
+                    <img ng-src="{{img.smallImg}}" ng-click="vm.changeImg($index)" />
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

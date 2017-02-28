@@ -1,0 +1,19 @@
+{
+  "name": "wsi-markup",
+  "version": "1.0.0",
+  "description": "Markup Challenge by Williams Sonoma",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sankalp Heranjal",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-angular-filesort": "^1.1.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-inject": "^4.2.0",
+    "main-bower-files": "^2.13.1"
+  }
+}

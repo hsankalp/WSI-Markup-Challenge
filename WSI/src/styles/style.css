@@ -1,0 +1,102 @@
+section {
+    min-height: 800px;
+    width: 100%;
+    padding: 20px;
+}
+
+.header {
+    margin: 20px;
+    width: 237px;
+    height: 110px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.footer {
+    padding: 10px;
+    text-align: center;
+    font-size: 11px;
+    min-height: 100px;
+    background-color: #f1f1f1;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    text-align: center;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav li a {
+    display: inline-block;
+    color: white;
+    padding: 5px;
+    font-size: 11px;
+}
+
+.nav li a:hover {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.gallery img {
+    margin: 10px;
+}
+
+.gallery ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery li {
+    float: left;
+}
+
+.gallery li img {
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.selectedImg {
+    border-style: solid
+}
+
+.details h3, h4 {
+    font-family: times;
+}
+
+.addToCart img {
+    cursor: pointer;
+}
+
+.additionalInfo h4 {
+    cursor: pointer;
+}
+
+.cart {
+    min-height: 300px;
+}
+
+.cartImg {
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+}
+
+.cartBtn {
+    border: 0;
+    background: transparent;
+}
+
+.error {
+    color: red;
+}
